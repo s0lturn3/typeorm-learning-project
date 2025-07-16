@@ -59,7 +59,7 @@ src/
 
 1. **Clone o repositório:**
 ```bash
-git clone <https://github.com/s0lturn3/typeorm-learning-project.git>
+git clone https://github.com/s0lturn3/typeorm-learning-project.git
 cd typeorm-learning-project
 ```
 
