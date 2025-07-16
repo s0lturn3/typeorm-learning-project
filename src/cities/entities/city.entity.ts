@@ -1,4 +1,10 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  PrimaryGeneratedColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 
 @Entity({ name: 'cities' })
 export class City {
@@ -13,4 +19,16 @@ export class City {
 
   @Column({ type: 'boolean', default: true })
   active: boolean;
+
+  @Column({ length: 2 })
+  state: string;
+
+  @Column({ nullable: true })
+  population: number;
+
+  @CreateDateColumn()
+  createdAt: Date;
+
+  @UpdateDateColumn()
+  updatedAt: Date;
 }
